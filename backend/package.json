@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend services for the fleet management system",
+  "scripts": {
+    "start": "concurrently \"npm run start:auth\" \"npm run start:driver\"  \"npm run start:vendor\" \"npm run start:assign\" \"npm run start:vehicle\"",
+    "start:auth": "cd auth-service && npm start",
+    "start:driver": "cd driver-service && npm start",
+    "start:vehicle": "cd vehicle-service && npm start",
+    "start:assign": "cd assign-service && npm start",
+    "start:vendor": "cd vendor-service && npm start",
+    "install:all": "npm install && cd auth-service && npm install && cd ../driver-service && npm install && cd ../vehicle-service && npm install && cd ../assign-service && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
