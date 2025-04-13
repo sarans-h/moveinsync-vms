@@ -7,12 +7,12 @@ A comprehensive microservices-based system for managing vendors, drivers, and ve
 The system is built using a microservices architecture with the following components:
 
 ### Backend Services
-1. **Auth Service** (Port: 3001)
+1. **Auth Service** 
    - User authentication and authorization
    - JWT token management
    - Role-based access control
 
-2. **Admin Service** (Port: 3006)
+2. **Admin Service** 
    - Vendor management
    - Driver management
    - Vehicle management
